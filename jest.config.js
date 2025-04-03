@@ -7,7 +7,7 @@ module.exports = {
     '^.+\\.ts$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'js', 'json', 'node'],
-  collectCoverage: true,
+  collectCoverage: process.env.npm_lifecycle_event === 'test:coverage',
   coverageDirectory: 'coverage',
   coverageReporters: ['text', 'lcov'],
 }; 
