@@ -11,7 +11,7 @@ The software demonstrates the power of TypeScript in building robust backend ser
 
 The purpose of this project is to create a scalable and maintainable API that can help people prepare for emergencies. By using TypeScript, we ensure that the code is reliable and easy to maintain, while providing a solid foundation for future enhancements.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/ydm67NiU0a4)
 
 # Development Environment
 
