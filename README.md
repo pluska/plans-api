@@ -1,78 +1,52 @@
-# Express TypeScript API with Redis and Swagger
+# Overview
 
-A modern REST API built with Express.js, TypeScript, Redis for caching, and Swagger for API documentation.
+This project is an emergency preparedness API that helps users create and manage personalized emergency plans. The system provides step-by-step guidance for different types of emergency scenarios, including natural disasters, economic crises, and general preparedness. The API uses TypeScript to ensure type safety and maintainable code structure.
 
-## Prerequisites
+The software demonstrates the power of TypeScript in building robust backend services. It showcases features like:
+- Strong typing for API requests and responses
+- Async/await for handling asynchronous operations
+- Class-based service architecture
+- Comprehensive error handling
+- Integration with external services (Redis for caching)
 
-- Node.js (v14 or higher)
-- Redis server running locally (or update the Redis connection URL in the code)
-- npm or yarn package manager
+The purpose of this project is to create a scalable and maintainable API that can help people prepare for emergencies. By using TypeScript, we ensure that the code is reliable and easy to maintain, while providing a solid foundation for future enhancements.
 
-## Setup
+[Software Demo Video](http://youtube.link.goes.here)
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start Redis server (if not already running)
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
+# Development Environment
 
-## Available Scripts
+Tools used:
+- Node.js and npm for package management
+- TypeScript for type-safe development
+- Jest for testing
+- ESLint for code quality
+- Redis for caching
+- Express.js for the web server
+- Swagger for API documentation
 
-- `npm run dev`: Start the development server with hot-reload
-- `npm run build`: Build the TypeScript code
-- `npm start`: Start the production server
-- `npm test`: Run tests
-- `npm run test:watch`: Run tests in watch mode
-- `npm run lint`: Run ESLint
-- `npm run lint:fix`: Fix ESLint issues
+Programming Languages and Libraries:
+- TypeScript
+- Express.js
+- ioredis
+- Jest
+- ESLint
+- @google/generative-ai
 
-## API Documentation
+# Useful Websites
 
-Once the server is running, you can access the Swagger documentation at:
-```
-http://localhost:3000/api-docs
-```
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+- [Express.js Documentation](https://expressjs.com/)
+- [Jest Documentation](https://jestjs.io/)
+- [Redis Documentation](https://redis.io/documentation)
+- [ESLint Documentation](https://eslint.org/docs/)
 
-## API Endpoints
+# Future Work
 
-### Cache API
-
-- `GET /api/cache/:key`: Get a value from cache
-- `POST /api/cache`: Set a value in cache
-
-Example request:
-```bash
-# Set a value
-curl -X POST http://localhost:3000/api/cache \
-  -H "Content-Type: application/json" \
-  -d '{"key": "test-key", "value": "test-value"}'
-
-# Get a value
-curl http://localhost:3000/api/cache/test-key
-```
-
-## Testing
-
-Run the test suite:
-```bash
-npm test
-```
-
-## Project Structure
-
-```
-src/
-├── __tests__/          # Test files
-├── routes/            # API routes
-├── index.ts           # Main application file
-└── types/             # TypeScript type definitions
-```
-
-## License
-
-ISC 
+- Implement user authentication and authorization
+- Add more emergency plan types and scenarios
+- Improve test coverage for controllers
+- Add rate limiting for API endpoints
+- Implement caching for frequently accessed plans
+- Add support for multiple languages
+- Connect with frontend interface for the API
+- Add real-time notifications for emergency alerts
